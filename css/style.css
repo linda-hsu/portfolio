@@ -1,0 +1,189 @@
+.container {
+  padding: 10%;
+  color: #373c44;
+}
+
+.main {
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+
+.work {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.casestudy {
+  width: 80%;
+  line-height: 1.75em;
+}
+.social {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.row {
+  padding-top: 10%
+}
+a{
+  color: #FBDA61;
+}
+a:hover{
+  color: #373c44;
+  text-decoration: none;
+}
+
+.fa {
+  margin: .5em;
+  text-align: center;
+  text-decoration: none;
+  color: #e2e2e2;
+  transition: .5s ease;
+}
+
+.fa:hover {
+  color: #FBDA61;
+  transform: translate(0em, -.2em);
+}
+
+.gallery {
+  width: 100%; 
+  height: auto;
+}
+
+.project-img {
+  width: 50%; 
+  height: auto;
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.project-img-lg {
+  width: 75%; 
+  height: auto;
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#card-link {
+  color: #373c44;
+}
+
+#card-link:hover {
+  color: #373c44;
+  text-decoration: none;
+}
+
+.magicUnderline {
+  background-image: linear-gradient(120deg, #FBDA61 0%, #FF5ACD 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 90%;
+}
+.magicLink {
+  color: #FBDA61;
+  background-image: linear-gradient(120deg, #FBDA61 0%, #FF5ACD 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 0.2em;
+  background-position: 0 90%;
+}
+.magicLink:hover {
+  background-size: 100% 0.2em;
+  transition: .5s ease;
+}
+
+#work-preview {
+  width: 32%;
+}
+
+#folio-img {
+  width: 80%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 355px;
+  background-color: white;
+  vertical-align: top;
+  text-align: left;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+  white-space: normal;
+  color: #4B4F56;
+  transition: .5s ease;
+}
+.card:hover {
+  transform: translate(0em, -1em);
+}
+.card-image {
+  background-color: white;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  clear: both;
+  float: left;
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+.card-description {
+  position: relative;
+  clear: both;
+  float: left;
+  width: 100%;
+  overflow: visible;
+  padding: 10%;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1em;
+}
+
+.card-visual {
+  display: inline-block;
+  position: relative;
+  height: 325px;
+  width: 250px;
+  background-color: white;
+  vertical-align: top;
+  text-align: left;
+  margin: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+  white-space: normal;
+  color: #4B4F56;
+  transition: .5s ease;
+}
+
+.card-visual:hover {
+  transform: translate(0em, -1em);
+}
+
+.card-visual-image {
+  background-color: white;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  clear: both;
+  float: left;
+  overflow: auto;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+}
+
+#aboutpic {
+  width: 400px;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
