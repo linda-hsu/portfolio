@@ -1,28 +1,72 @@
 body { 
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 500;
+  line-height: 1.25;
 }
 h2 {
   font-size: 2em;
   font-weight: 500;
 }
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+a{
+  color: #FBDA61;
+  text-decoration: none;
+}
+a:hover{
+  color: #373c44;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+#aboutpic {
+  width: 400px;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+#aboutlink{
+  color: #f29800;
+}
+#aboutlink:hover{
+  color: #373c44;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+#card-link {
+  color: #373c44;
+}
+#card-link:hover {
+  color: #373c44;
+  text-decoration: none;
+}
 .container {
   padding: 10%;
   color: #373c44;
-  max-width: 850px;
   margin: 0 auto;
 }
 
 .main {
   padding-top: 15%;
   padding-bottom: 20%;
+  margin: 0 auto;
 }
-
+#home {
+  max-width: 850px;
+}
 .work {
   padding-top: 10%;
   padding-bottom: 10%;
@@ -39,23 +83,6 @@ h2 {
 
 .row {
   padding-top: 10%
-}
-a{
-  color: #FBDA61;
-  text-decoration: none;
-}
-a:hover{
-  color: #373c44;
-  text-decoration: none;
-  transition: .5s ease;
-}
-#aboutlink{
-  color: #FF5ACD;
-}
-#aboutlink:hover{
-  color: #373c44;
-  text-decoration: none;
-  transition: .5s ease;
 }
 .fa {
   margin: .5em;
@@ -85,15 +112,6 @@ a:hover{
   width: 75%; 
   height: auto;
   margin: 0 auto;
-}
-
-#card-link {
-  color: #373c44;
-}
-
-#card-link:hover {
-  color: #373c44;
-  text-decoration: none;
 }
 
 .magicUnderline {
@@ -190,14 +208,5 @@ a:hover{
   height: 250px;
 }
 
-#aboutpic {
-  width: 400px;
-  float: left;
-  margin-right: 2em;
-  margin-bottom: 1em;
-}
 
-@media (max-width:800px) {
-  font-size: 10vw;
-  
-  }
+
