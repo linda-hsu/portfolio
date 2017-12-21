@@ -3,85 +3,112 @@
 <head>
   <link rel="icon" type="image/png" href="images/browsericon.png"/>
   <meta charset="UTF-8">
-  <title>Linda Hsu | Product and Visual Design</title> 
+  <title>Linda Hsu | Product and Visual Design</title>
+  <!---stylesheets------------------------------>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+  <link rel="stylesheet" href="https://use.typekit.net/qdk1kie.css">
+  <link rel="stylesheet" href="aos/aos.css">
+  <!---scripts------------------------------>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
+  <script type="text/javascript" src="aos/aos.js"></script>
 </head>
-
 <body>
-
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <div class="container" id="home">
-    <div class="header">
-      <a href="index.html"><h2><i class="em em-dizzy"></i></h2></a>
+  <div class="container">
+    <div class="navigation">
+      <div class="home-button"><i class="ec ec-dizzy"></i></div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="link">work</a></li>
+          <li><a href="about.html" class="link">about</a></li>
+          </ul>
+        </div>
     </div>
-    <div class="main" id="main">
-      <h1>Hi – I'm <a href="about.html" class="magicLink">Linda</a>, a <a href="#product-work" class="magicLink">product</a> and <a href="#visual-work" class="magicLink">visual</a> designer based in San Francisco.</h1>
-      <p><p>
-      <h2>I believe in mission-driven design for good.</h2>
+    <div class="item-1 item">
+      <div class="item header-img">
+        <img src="images/digitaldesigner4.png">
+        </div>
+          <div class="item header-content">
+            <h1><br>product + visual designer based in san francisco.</h1>
+            </div>
+    </div>
+    <div class="section-header">
+      <h2>selected case studies</h2>
+    </div>
+    <div class="item-2 item">
+      <div class="item description" data-aos="zoom-in">
+      <h2>SeeAroundMe</h2>
+      <hr class="style1"><br>
+      A usability overhaul for iOS app navigation, information architecture and layout, plus a visual re-design as the cherry on top. SeeAroundMe is a local community news app populated by user-generated content.
+    </div>
+      <div class="item case-image" data-aos="fade-left" data-aos-duration="600">
+        <img src="images/case_img2.png">
+      </div>
+    </div>
+    <div class="item-3 item">
+      <div class="item case-image" data-aos="fade-right" data-aos-duration="600">
+        <img src="images/case_img3.png">
+      </div>
+      <div class="item description" data-aos="zoom-in">
+       <h2>Crowdfund Mainstreet</h2>
+       <hr class="style1"><br>
+       Designing onboarding and campaign creation pages for a user-friendly and educational crowdfunding platform. Crowdfund Mainstreet connects mission-driven entrepreneurs to investors who care about social impact.
+    </div>
+    </div>
+    <div class="item-4 item">
+      <div class="item description" data-aos="zoom-in">
+      <h2>Heard</h2>
+      <hr class="style1"><br>
+       Helping busy parents stay engaged in their school community. User research laid the groundwork for creating an improved news feed and notification experience for Heard, a parent and teacher communication platform.
+    </div>
+      <div class="item case-image" data-aos="fade-left" data-aos-duration="600">
+        <img src="images/case_img.png">
+      </div>
+    </div>
+    <div class="item description" data-aos="zoom-in">
+      <div class="item-7 item">
+        <div class="item case-image" data-aos="fade-right" data-aos-duration="600">
+          <img src="images/case_img3.png">
+        </div>
+        <div class="item description" data-aos="zoom-in">
+     <h2>Terminal 49</h2>
+     <hr class="style1"><br>
+     Designing a user-friendly crowdfunding platform to connect mission-driven entrepreneurs and investors who care about community and social impact.
    </div>
-      <hr>
-  <div class="work" id="product-work"> 
-    <h2><span class="magicUnderline">Product</span></h2>
-    <br>
-    <a href="poshmark.html" id="card-link">
-      <div class="card">
-       <div class="card-image" style="background-image: url(images/poshmark-preview.png)">
-		   </div>
-         <div class="card-description">
-           Poshmark Usability Case Study
-         </div>
-    </a>
+   </div>
+    <div class="section-header">
+      <h1>Visual</h1>
+    </div>
+    <div class="item-5 item">
+      <div class="visual-card">
+        <h3>Daily UI Challenge</h3>
+        <img src="http://lindahsu.design/images/dailyui-preview.png" id="visual-img">
+        <br>
+        see more
       </div>
-      <a href="heard.html" id="card-link">
-      <div class="card">
-        <div class="card-image" style="background-image: url(images/heard-preview.png)">
-		  	</div>
-          <div class="card-description">
-           HEARD Feed Prioritization<br>User Research
-          </div>
-    </a>
-        </div>
-     </div>
-  <div class="work" id="visual-work"> 
-    <h2><span class="magicUnderline">Visual</span></h2>
-    <br>
-      <a href="dailyui.html" id="card-link">
-      <div class="card-visual">
-        <div class="card-visual-image" style="background-image: url(images/dailyui-preview.png)">
-		  	</div>
-          <div class="card-description">
-           Daily UI Challenge
-          </div>
-       </div>
-       </a>
-      <a href="type-layout.html" id="card-link">
-      <div class="card-visual">
-        <div class="card-visual-image" style="background-image: url(images/type-preview.png)">
-        </div>
-          <div class="card-description">
-           Type and Layout
-          </div>
-       </div>
-       </a>
-      <a href="illustration.html" id="card-link">
-      <div class="card-visual">
-        <div class="card-visual-image" style="background-image: url(images/illustration-preview.png)">
-        </div>
-          <div class="card-description">
-           Illustration
-          </div>
-       </div>
-       </a>
+      <div class="visual-card">
+        <h3>Typography</h3>
+        <img src="http://lindahsu.design/images/type-preview.png" id="visual-img">
+        <br>
+        see more
       </div>
-  <hr>
-  <div class ="social">
-    <a href="https://twitter.com/_lindahsu" target="_blank" class="fa fa-twitter" style="font-size: 1.5em"></a>
-    <a href="https://www.linkedin.com/in/hsulinda/" target="_blank" class="fa fa-linkedin" style="font-size: 1.5em"></a>
-    <a href="mailto:lindahsudesign@gmail.com" class="fa fa-envelope" style="font-size: 1.5em"></a>
+      <div class="visual-card">
+        <h3>Illustration</h3>
+        <img src="http://lindahsu.design/images/illustration-preview.png" id="visual-img">
+        <br>
+        see more
+      </div>
+    </div>
+    <div class="item-6 item">
+      <a href="https://twitter.com/_lindahsu" target="_blank" class="socialLinks">twitter</a> |
+      <a href="https://www.linkedin.com/in/hsulinda/" target="_blank" class="socialLinks">linkedin</a> |
+      <a href="mailto:lindahsudesign@gmail.com" class="socialLinks">email</a>
+      <div class="smalltext">Designed and developed by Linda Hsu &copy; 2017
+      </div>
+    </div>
   </div>
-</div>
 </body>
+
 </html>
