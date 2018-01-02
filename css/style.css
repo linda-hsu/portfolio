@@ -91,10 +91,13 @@ li a {
     text-decoration: none;
     color: #535c77;
 }
-a {
+#aboutlink {
   font-weight: 400;
   text-decoration: none;
   color: #535c77;
+}
+#aboutlink:hover {
+  opacity: .1;
 }
 .link {
     display: inline-block;
@@ -154,9 +157,9 @@ a {
   display: none;
 }
 .item-6 {
-	height: 200px;
+  height: 100px;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .description {
   flex: 2;
