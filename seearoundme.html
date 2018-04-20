@@ -1,40 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
   <link rel="icon" type="image/png" href="images/browsericon.png"/>
   <meta charset="UTF-8">
-  <title>Linda Hsu | Product and Visual Design</title>
+  <title>SeeAroundMe — Linda Hsu</title>
+  <!---scripts------------------------------>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="aos/aos.js"></script>
   <!---stylesheets------------------------------>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
   <link rel="stylesheet" href="https://use.typekit.net/qdk1kie.css">
   <link rel="stylesheet" href="aos/aos.css">
-  <!---scripts------------------------------>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="aos/aos.js"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="navigation">
-      <div class="home-button"><i class="ec ec-dizzy"></i></div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="link">work</a></li>
-          <li><a href="about.html" class="link">about</a></li>
-          </ul>
-        </div>
-    </div>
-hello
+  </head>
+  <body>
 
-    <div class="item-6 item">
-      <a href="https://twitter.com/_lindahsu" target="_blank" class="socialLinks">twitter</a> |
-      <a href="https://www.linkedin.com/in/hsulinda/" target="_blank" class="socialLinks">linkedin</a> |
-      <a href="mailto:lindahsudesign@gmail.com" class="socialLinks">email</a>
-      <div class="smalltext">Designed and developed by Linda Hsu &copy; 2017
+<div class="container">
+
+  <div class="navbar">
+    <div class="logo"><li><a href="index.html">linda hsu</a></li></div>
+      <nav>
+        <li><a href="index.html#work">work</a></li>
+        <li><a href="about.html">about</a></li>
+      </nav>
+    </div>
+
+    <div class="casestudy">
+
+      <div class="cs-text">
+        <h2>SeeAroundMe</h2><h4>Creating a better experience for skimming and sharing location-based news</h4><br>
+        <img src="images/seearoundme_main.png">
       </div>
-    </div>
-  </div>
-</body>
 
+        <div class="cs-text">
+          <div class="twocol">
+            <div id="col"><h5>The Client</h5> <a href="http://www.seearound.me">SeeAroundMe</a> is a local community news app populated by user-generated content.</div>
+            <div id="col"><h5>My Role</h5> End-to-end Product Designer on a team of 5 designers.</div>
+          </div>
+        </div>
+
+        <hr class="style2">
+
+        <div class="cs-text">
+          <h5>The Challenge</h5> <h4><i>How can we improve the experience of quickly finding, consuming, and sharing local news?</i></h4>
+          <h5>The Process</h5>
+              <ul>
+                <li>Reviewing research</li>
+                <li>Task flows</li>
+                <li>Rapid prototyping</li>
+                <li>Lo-fi wireframes</li>
+                <li>User testing</li>
+                <li>Creating a style guide</li>
+                <li>Mid-fi prototype</li>
+                <li>Hi-fi prototype and testing</li>
+                </ul>
+            </div>
+
+            <div class="cs-image">
+              <img src="images/sam_before.png"/> Newsfeed, New Post, Map View - Before
+              <br><br>
+              <img src="images/sam_after.png"/> Newsfeed, New Post, Map View - After
+            </div>
+
+            <div class="cs-text">
+              <h5>The Solution</h5>
+              <ul>
+                <li>Moving to native iOS development</li>
+                <li>Reorganizing information architecture, navigation and layout</li>
+                <li>Rethinking newsfeed, posting and sharing</li>
+                <li>Rebranding and visual re-design</li>
+              </ul>
+            </div>
+        <hr class="style2">
+
+        <div class="cs-text">
+          <h3>Where do we begin?</h3>
+          As a beginning-stage MVP application, SeeAroundMe’s app had some glaring usability issues, particularly with the <b>navigation and layout</b>.
+          There was much to be improved, so we had to decide which problems to address first.
+          Previous research revealed that users wanted to be able to quickly <b>get their news at a glance</b> and be able to <b>easily find the posts that were most relevant</b> to them.
+          We set out to create a more seamless and intuitive experience and tighten up the UI of the app by creating a style guide and implementing a visual re-design.
+          <br><br>
+
+          <h3>Making sense of a jumbled information architecture</h3>
+          The Information Architecture of the app was a bit of a mess, with a hamburger menu nested in the main navigation bar and <b>very little organizational hierarchy</b>.
+          After creating task flows to flesh out the IA of the site, we broke the app out into 3 main sections to focus on: <b>newsfeed, new post, and accounts</b>.
+          <br><br>
+          <div class="cs-image"><img src="images/sam_taskflows.png"/>A birds eye view of some of our task flow explorations</div>
+
+          <h3>Goldilocks prototype testing</h3>
+          Our group design sprint led to the creation of initial lo-fi wireframes. We explored and tested 3 different versions to see which one would fit <i>just</i> right. Each prototype had its pros and cons so we incorporated feedback from each version, using one as the primary base.
+          <div class="cs-image"><img src="images/sam_lofi.png"/>We tested 3 different prototype versions in our lo-fi phase</div>
+
+          <h5>Key Considerations</h5>
+          <ul>
+            <li>What navigation structure is most intuitive and easy to use?</li>
+            <li>How to filter content and categories?</li>
+            <li>How to organize content within each post?</li>
+            <li>What information is most relevant to show?</li>
+            <li>Which format for posts makes the most sense?</li>
+            <li>How do we reduce friction in the posting process?</li>
+            <li>How do we differentiate between different types of posts?</li>
+          </ul>
+          <br>
+          <h3>Let's make it pretty (for good reason)</h3>
+          One of our focuses for this project was a visual re-design to give the app more of a voice and enhance its credibility and usability. We created style tiles that led to a style guide that we applied to our hi-fi design.
+          We came up with a handful of hi-fi examples that we chose from and developed further.
+          </div>
+
+          <div class="cs-image"><img src="images/sam_styleguide.png"/ style="max-width: 400px;"></div>
+
+          <div class="cs-text">
+          <h3>Shaping up and shipping out</h3>
+          <div class="cs-image"><img src="images/sam_finalscreens.png"/></div>
+
+          <h5>Key Changes</h5>
+
+          <ul>
+            <li>Newsfeed: easily distinguish and sort through content</li>
+            <li>Navigation: category slider and bottom nav bar</li>
+            <li>New post: easier category selection and attachments</li>
+            <li>Isolated post view: cleaned up overflow actions </li>
+            <li>Bookmarking: making it easy to save posts for sharing or referencing later on</li>
+            <li>Dedicated activity page: more visual distinction and consolidated notifications</li>
+            <li>Reorganized accounts page and settings flow</li>
+          </ul>
+          <br>
+
+          <h3>The final prototype</h3>
+          See the <a href"https://projects.invisionapp.com/share/EJF0QKLKP#/269951945_Newsfeed_-_All">final protoype</a> in InVision
+          <h3>Learnings & takeaways</h3>
+          Overall, the project went smoothly, thanks to great project management and organization. We learned the importance of <b>staying organized and detail-oriented</b> (we had more than 50 screens - that’s a lot of potential naming/labeling/layer mishaps), of <b>identifying key issues and maintaining focus</b>, narrowing project scope and managing feasibility, and creating a <b>cohesive visual style</b>.
+          <p>
+          We experienced the classic designer blackhole of choosing the *right* colors in full force, so I would be interested in exploring a <b>more systematic approach to this process</b>. We focused more on usability testing rather than exploratory user research, and the testing was done more qualitatively than quantitatively, so it would have been interesting to <b>approach the research process differently</b>.
+          One concern I have is introducing all of these significant changes at once, which could be shocking to the user. However, given that the user base is still quite small and inactive at this early stage, it won't cause as much of a splash as, say, a reddit redesign.
+          <p>
+          The client was pleased with the final result, particularly with how much we were able to get done in a short time frame. The prototype will go into development soon (in the next 3-5 months), and we are looking forward to seeing our work IRL. Once implemented, I'd like to test improvements in engagement.
+      </div>
+</div>
+</body>
 </html>

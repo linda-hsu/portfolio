@@ -1,59 +1,74 @@
  @import url("https://use.typekit.net/qdk1kie.css")
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
  * {
 	box-sizing: border-box;
 }
 body {
-	font-size: 1.5em;
-  line-height: 1.5em;
-	font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
+	font-size: 1.25em;
+  line-height: 1.75em;
+	font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #535c77;
-	background: none;
 	padding-left: 3%;
 	padding-right: 3%;
-  background-color: #FFFFD3;
+  width: 100wh;
+  height: 100%;
+  background: #fafafa;
 }
 h1 {
   font-family: 'ff-carina', serif;
-  font-size: 5em;
-  font-size: 5vw;
+  font-size: 6em;
+  font-size: 6vw;
   font-weight: 400;
-  line-height: 1.15em;
+  line-height: 1.2em;
   letter-spacing: -1px;
   color: #535c77;
 }
 h2 {
   font-family: 'ff-carina', serif;
-  font-size: 4em;
-  font-size: 4vw;
+  font-size: 2.75em;
   font-weight: 400;
   line-height: 1.15em;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   color: #535c77;
   margin-bottom: 30px;
 }
 h3 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', serif;
   font-size: 1.5em;
-  font-size: 1.5vw;
   font-weight: 400;
-  letter-spacing: 1px;
+  line-height: 1.25em;
+  letter-spacing: 0px;
+  color: #535c77;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #535c77;
+}
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 600;
+  line-height: 1.5em;
   color: #535c77;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+b {
+  font-weight: 600;
+}
+ul {
+  padding-left: 10%;
+}
+li {
+  padding-left: 10px;
 }
 .smalltext {
   font-size: .6em;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-hr {
-  width: 90%;
-  border-top: 1px solid #535c77;
 }
 .style1 {
   display: block;
@@ -61,47 +76,95 @@ hr {
   border-top: 2px solid #535c77;
   float: left;
 }
+.style2 {
+  border-top: 2px solid #535c77;
+  opacity: .2;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
 .container {
 	margin: 2% auto;
 	padding: 2%;
 }
-.navigation {
-  align-items: center;
+#work {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .about {
-  width: 70%;
+  width: 90%;
   margin: auto;
   padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.home-button {
-  font-size: 3em;
-  display: none;
+.casestudy {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-.nav-links {
-  text-align: right;
-  padding-right: 10%;
+.twocol {
+  display: flex;
+  flex-direction: row;
 }
-.nav-links li {
+#col {
+  padding-right: 5%;
+}
+.navbar {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  display: inline;
+  line-height: 0;
+}
+.navbar li {
   display: inline;
   list-style: none;
   padding: 10px;
 }
 li a {
-    font-weight: 300;
+    font-size: .75em;
+    font-weight: 400;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #535c77;
 }
-#aboutlink {
+.logo {
+  margin-left: 3%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav {
+  text-align: right;
+  margin-right: 5%;
+}
+#aboutpic {
+  width: 100%;
+  max-width: 800px;
+  display: inline;
+  flex: 2;
+}
+#abouttext {
+  max-width: 1200px;
+  flex: 3;
+  width: 100%;
+  padding-left: 5%;
+}
+a {
   font-weight: 400;
   text-decoration: none;
   color: #535c77;
 }
-#aboutlink:hover {
+a:hover {
   opacity: .1;
 }
 .link {
     display: inline-block;
     color: #535c77;
+    font-weight: 300;
     text-decoration: none;
 }
 .link::after {
@@ -109,6 +172,7 @@ li a {
     display: block;
     width: 0;
     height: 1px;
+    line-height: 0;
     background: #535c77;
     transition: width .3s;
 }
@@ -120,10 +184,6 @@ li a {
 }
 .header-content{
   flex: 3;
-}
-.section-header {
-  text-align: center;
-  display: none;
 }
 .item {
 	padding: 1%;
@@ -175,14 +235,10 @@ li a {
   transition: all 0.3s;
 }
 .case-image:hover img{
+  opacity: 1;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-.visual-card {
-  display: block;
-  width: auto;
-  text-align: center;
 }
 .fa {
   margin: .5em;
@@ -199,33 +255,29 @@ img {
   height: auto;
   object-fit: cover;
 }
-#visual-img {
-  width: 100%;
-  max-width: 300px;
-  max-height: 300px;
-  padding: 10px;
-}
-#aboutpic {
-  width: 100%;
-  max-width: 400px;
-}
-#abouthl {
-  display: inline;
-  position: relative;
-  transform: translate(0%, 0%);
-}
-.social {
-  text-align: center;
-}
-.socialLinks {
+.cs-image {
   font-size: .75em;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding: 5%
+}
+.cs-text {
+  max-width: 800px;
+  margin: auto;
 }
 @media (max-width: 800px) {
           h1 {
-            font-size: 1.5em;
+            font-size: 2em;
           }
           h2 {
             font-size: 2em;
+          }
+          h3 {
+            font-size: 1.15em;
+          }
+          h4 {
+            font-size: 1em;
           }
           body {
             font-size: 1.2em;
@@ -240,6 +292,7 @@ img {
           .item-1 {
               flex-direction: column;
               flex-wrap: wrap;
+              min-height: 400px;
           }
           .item-2 {
               flex-wrap: wrap;
@@ -256,7 +309,57 @@ img {
           .item-5 {
               flex-wrap: wrap;
           }
-          #abouthl {
-            display: block;
+          .logo {
+            margin-left: 0;
+          }
+          nav {
+            margin-right: 0;
+          }
+          .about {
+            flex-direction: column;
+            width: 98%;
+          }
+          .casestudy {
+            width: 98%;
+          }
+          .twocol {
+            flex-direction: column;
+          }
+          #col {
+            padding-right: 0;
+          }
+          #abouttext {
+            padding-left: 0;
+            padding-top: 5%;
           }
       }
+
+@media (max-width: 1000px) {
+        .item-1 {
+            flex-direction: column;
+            flex-wrap: wrap;
+            min-height: 400px;
+        }
+        .item-2 {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        .item-3 {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .item-4 {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        .item-5 {
+            flex-wrap: wrap;
+        }
+        .about {
+          flex-direction: column;
+        }
+        #abouttext {
+          padding-left: 0;
+          padding-top: 5%;
+        }
+}
