@@ -61,6 +61,7 @@ h5 {
 h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
+  font-size: 3vh;
   font-weight: 300;
   line-height: 1.75em;
   color: #4c4c4c;
@@ -287,6 +288,8 @@ img {
 @media (max-width: 800px) {
           h1 {
             font-size: 2em;
+            letter-spacing: 0px;
+            line-height: 1.25em;
           }
           h2 {
             font-size: 2em;
