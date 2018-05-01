@@ -46,7 +46,7 @@ h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  line-height: 1.75em;
+  line-height: 1.5em;
   color: #4c4c4c;
 }
 h5 {
@@ -61,7 +61,6 @@ h5 {
 h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
-  font-size: 3vh;
   font-weight: 300;
   line-height: 1.75em;
   color: #4c4c4c;
