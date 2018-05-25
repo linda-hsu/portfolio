@@ -177,7 +177,7 @@ a {
   color: #4c4c4c;
 }
 a:hover {
-  opacity: .1;
+  color: #ffec5e;
 }
 .underline {
   background-image: linear-gradient(180deg,transparent 75%,#ffec5e 0)
@@ -271,20 +271,30 @@ img {
   max-width: 750px;
   margin: auto;
 }
-@media (min-width: 320px) and (max-width: 900px) {
+#footer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.previous {
+  float: left;
+}
+.next {
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 699px) {
           h1 {
             font-size: 2.5em;
             letter-spacing: 0px;
             line-height: 1.25em;
           }
           h2 {
-            font-size: 2em;
+            font-size: 2.5em;
           }
           h3 {
-            font-size: 1.15em;
+            font-size: 1.5em;
           }
           h4 {
-            font-size: 1em;
+            font-size: 1.2em;
           }
           h6 {
             font-size: .9em;
@@ -316,9 +326,6 @@ img {
               flex-wrap: wrap;
               flex-direction: column-reverse;
           }
-          .item-5 {
-              flex-wrap: wrap;
-          }
           .logo {
             margin-left: 0;
           }
@@ -344,7 +351,7 @@ img {
           }
       }
 
-@media (max-width: 1000px) {
+@media (min-width: 700px) and (max-width: 1100px) {
         .item-1 {
             flex-direction: column;
             flex-wrap: wrap;
@@ -362,14 +369,18 @@ img {
             flex-wrap: wrap;
             flex-direction: column-reverse;
         }
-        .item-5 {
-            flex-wrap: wrap;
-        }
         .about {
           flex-direction: column;
         }
         #abouttext {
           padding-left: 0;
           padding-top: 5%;
+        }
+        #aboutpic {
+          max-width: 550px;
+        }
+        .about {
+          max-width: 575px;
+          margin: 0 auto;
         }
 }
