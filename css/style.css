@@ -135,7 +135,15 @@ li {
   padding: 5px;
   display: inline;
   line-height: 0;
-  font-size: 1.25em;
+  font-size: .9em;
+  align-items: center;
+}
+.nav {
+  text-align: right;
+  margin-right: 5%;
+  line-height: 0px;
+  float: right;
+  position: relative;
 }
 .navbar li {
   display: inline;
@@ -143,7 +151,6 @@ li {
   padding: 10px;
 }
 li a {
-    font-size: .75em;
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
@@ -151,13 +158,11 @@ li a {
     color: #4c4c4c;
 }
 .logo {
-  margin-left: 3%;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-left: 4%;
 }
-nav {
-  text-align: right;
-  margin-right: 5%;
+#wordmark {
+  max-width: 75px;
+  width: 100%;
 }
 #aboutpic {
   width: 100%;
@@ -225,6 +230,10 @@ u {
 .item-4 {
 	display: flex;
 }
+.item-5 {
+	display: flex;
+  align-content: space-around;
+}
 .description {
   flex: 2;
 }
@@ -260,6 +269,14 @@ img {
   height: auto;
   object-fit: cover;
 }
+.header {
+  padding-left: 5%;
+}
+.other-project {
+  width: 100%;
+  max-width: 600px;
+  padding: 3%;
+}
 .cs-image {
   font-size: .75em;
   font-style: italic;
@@ -274,12 +291,16 @@ img {
 #footer {
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
 }
 .previous {
   float: left;
 }
 .next {
   float: right;
+}
+#hide {
+  display: none;
 }
 @media (min-width: 320px) and (max-width: 699px) {
           h1 {
@@ -326,11 +347,19 @@ img {
               flex-wrap: wrap;
               flex-direction: column-reverse;
           }
+          .item-5 {
+              flex-wrap: wrap;
+              flex-direction: column;
+          }
           .logo {
             margin-left: 0;
+            padding-left: 0;
           }
-          nav {
+          .nav {
             margin-right: 0;
+          }
+          li a {
+              font-size: .9em;
           }
           .about {
             flex-direction: column;
