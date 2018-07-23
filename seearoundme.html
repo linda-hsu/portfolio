@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
   <link rel="stylesheet" href="aos/aos.css">
+  <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
 
@@ -63,13 +64,17 @@
             <br><br>
 
             <div class="cs-text" style="text-align: center;">
-              <h5>Before & After</h5>
+              <h5>Before:</h5>
+            </div>
+            <div class="cs-image">
+              <img src="images/sam_before.png"/ data-aos="fade-up" data-featherlight="images/sam_before.png">
             </div>
 
-            <div class="cs-image">
-              <img src="images/sam_before.png"/ data-aos="fade-up">
-              <br><br>
-              <img src="images/sam_after.png"/ data-aos="fade-up">
+              <div class="cs-text" style="text-align: center;">
+                <h5>After:</h5>
+              </div>
+          <div class="cs-image">
+              <img src="images/sam_after.png"/ data-aos="fade-up" data-featherlight="images/sam_after.png">
             </div>
 
         <hr class="style2">
@@ -85,11 +90,11 @@
           The Information Architecture of the app was a bit of a mess, with a hamburger menu nested in the main navigation bar and <b>very little organizational hierarchy</b>.
           After creating task flows to flesh out the IA of the site, we broke the app out into 3 main sections to focus on: <b>newsfeed, new post, and accounts</b>.
           <br><br>
-          <div class="cs-image"><img src="images/sam_taskflows.png"/ data-aos="fade-up">A birds eye view of some of our task flow explorations</div>
+          <div class="cs-image"><img src="images/sam_taskflows.png"/ data-aos="fade-up" data-featherlight="images/sam_taskflows.png">A birds eye view of some of our task flow explorations</div>
 
           <h3>Goldilocks prototype testing</h3>
           Our group design sprint led to the creation of initial lo-fi wireframes. We explored and tested 3 different versions. Each prototype had its pros and cons so we incorporated feedback from each version, using one as the primary base.
-          <div class="cs-image"><img src="images/sam_lofi.png"/ data-aos="fade-up">We tested 3 different prototype versions in our lo-fi phase</div>
+          <div class="cs-image"><img src="images/sam_lofi.png"/ data-aos="fade-up" data-featherlight="images/sam_lofi.png">We tested 3 different prototype versions in our lo-fi phase</div>
 
           <h5>Key Considerations</h5>
           <ul>
@@ -111,7 +116,7 @@
 
           <div class="cs-text">
           <h3>Shaping up and shipping out</h3>
-          <img src="images/sam_final.png"/ data-aos="fade-up">
+          <img src="images/sam_final.png"/ data-aos="fade-up" data-featherlight="images/sam_final.png">
 
           <h5>Key Changes</h5>
 
@@ -133,5 +138,9 @@
         <i class="next"><a href="crowdfundms.html">next  ></i></a>
         <div style="clear: both"></div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 </html>
