@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400|Playfair+Display');
 
  * {
 	box-sizing: border-box;
@@ -399,6 +399,10 @@ img {
         .item-4 {
             flex-wrap: wrap;
             flex-direction: column-reverse;
+        }
+        .item-5 {
+            flex-wrap: wrap;
+            flex-direction: row;
         }
         .about {
           flex-direction: column;
